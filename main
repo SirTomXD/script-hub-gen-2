@@ -1,0 +1,664 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local LightningY = Instance.new("ScreenGui")
+local Topbar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Topbar_2 = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Name_2 = Instance.new("TextLabel")
+local Name_3 = Instance.new("TextLabel")
+local Dragicon = Instance.new("Frame")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Openbutton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local UICorner_4 = Instance.new("UICorner")
+local openmenu = Instance.new("Frame")
+local openmenupart2 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local openmenupart2_2 = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local menu = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local Mainthing = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Dashboard = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local Executor = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local ScriptHub = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local Settings = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local cmdthingparent = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local Commandbar = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local Commands = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local QuickCommands = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+
+--Properties:
+
+LightningY.Name = "Lightning Y"
+LightningY.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+LightningY.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Topbar.Name = "Topbar"
+Topbar.Parent = LightningY
+Topbar.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Topbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Topbar.BorderSizePixel = 0
+Topbar.Position = UDim2.new(0.739884377, 0, -0.00756620429, 0)
+Topbar.Size = UDim2.new(0, 369, 0, 43)
+
+UICorner.CornerRadius = UDim.new(0, 2)
+UICorner.Parent = Topbar
+
+Topbar_2.Name = "Topbar"
+Topbar_2.Parent = Topbar
+Topbar_2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Topbar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Topbar_2.BorderSizePixel = 0
+Topbar_2.Position = UDim2.new(-0.00266305148, 0, 0.125106454, 0)
+Topbar_2.Size = UDim2.new(0, 425, 0, 38)
+
+Name.Name = "Name"
+Name.Parent = Topbar_2
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Name.BorderSizePixel = 0
+Name.Position = UDim2.new(0.0202225987, 0, 0.143941179, 0)
+Name.Size = UDim2.new(0, 108, 0, 26)
+Name.Font = Enum.Font.SourceSans
+Name.Text = "Name"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextSize = 19.000
+Name.TextWrapped = true
+
+UICorner_2.Parent = Topbar_2
+
+Name_2.Name = "Name"
+Name_2.Parent = Topbar_2
+Name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.BackgroundTransparency = 1.000
+Name_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Name_2.BorderSizePixel = 0
+Name_2.Position = UDim2.new(0.307383686, 0, 0.143941179, 0)
+Name_2.Size = UDim2.new(0, 108, 0, 26)
+Name_2.Font = Enum.Font.SourceSans
+Name_2.Text = "Unc"
+Name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.TextSize = 19.000
+Name_2.TextWrapped = true
+
+Name_3.Name = "Name"
+Name_3.Parent = Topbar_2
+Name_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_3.BackgroundTransparency = 1.000
+Name_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Name_3.BorderSizePixel = 0
+Name_3.Position = UDim2.new(0.559284806, 0, 0.143941179, 0)
+Name_3.Size = UDim2.new(0, 108, 0, 26)
+Name_3.Font = Enum.Font.SourceSans
+Name_3.Text = "Executor"
+Name_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_3.TextSize = 19.000
+Name_3.TextWrapped = true
+
+Dragicon.Name = "Dragicon"
+Dragicon.Parent = LightningY
+Dragicon.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Dragicon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dragicon.BorderSizePixel = 0
+Dragicon.Position = UDim2.new(0.479046255, 0, 0.0403530896, 0)
+Dragicon.Size = UDim2.new(0, 61, 0, 57)
+
+UIAspectRatioConstraint.Parent = Dragicon
+
+Openbutton.Name = "Openbutton"
+Openbutton.Parent = Dragicon
+Openbutton.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Openbutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Openbutton.BorderSizePixel = 0
+Openbutton.Size = UDim2.new(0, 57, 0, 57)
+Openbutton.ZIndex = 2
+Openbutton.Font = Enum.Font.SourceSans
+Openbutton.Text = ""
+Openbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Openbutton.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(0, 15)
+UICorner_3.Parent = Openbutton
+
+UIAspectRatioConstraint_2.Parent = Openbutton
+
+UICorner_4.CornerRadius = UDim.new(0, 15)
+UICorner_4.Parent = Dragicon
+
+openmenu.Name = "openmenu"
+openmenu.Parent = LightningY
+openmenu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openmenu.BackgroundTransparency = 1.000
+openmenu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+openmenu.BorderSizePixel = 0
+openmenu.Position = UDim2.new(0, 0, 0.435056746, 0)
+openmenu.Size = UDim2.new(0, 48, 0, 103)
+
+openmenupart2.Name = "openmenupart2"
+openmenupart2.Parent = openmenu
+openmenupart2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+openmenupart2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+openmenupart2.BorderSizePixel = 0
+openmenupart2.Position = UDim2.new(0.36648795, 0, 0.425889403, 0)
+openmenupart2.Rotation = -45.000
+openmenupart2.Size = UDim2.new(0, 12, 0, 32)
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = openmenupart2
+
+openmenupart2_2.Name = "openmenupart2"
+openmenupart2_2.Parent = openmenu
+openmenupart2_2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+openmenupart2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+openmenupart2_2.BorderSizePixel = 0
+openmenupart2_2.Position = UDim2.new(0.396590173, 0, 0.257012218, 0)
+openmenupart2_2.Rotation = 45.000
+openmenupart2_2.Size = UDim2.new(0, 10, 0, 32)
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = openmenupart2_2
+
+TextButton.Parent = openmenu
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(0, 48, 0, 103)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+menu.Name = "menu"
+menu.Parent = LightningY
+menu.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+menu.BorderSizePixel = 0
+menu.Position = UDim2.new(0.0079479767, 0, 0.321563691, 0)
+menu.Size = UDim2.new(0, 58, 0, 282)
+menu.Visible = false
+
+UICorner_7.CornerRadius = UDim.new(0, 15)
+UICorner_7.Parent = menu
+
+UIAspectRatioConstraint_3.Parent = LightningY
+UIAspectRatioConstraint_3.AspectRatio = 1.753
+
+Mainthing.Name = "Mainthing"
+Mainthing.Parent = LightningY
+Mainthing.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Mainthing.BackgroundTransparency = 1.000
+Mainthing.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainthing.BorderSizePixel = 0
+Mainthing.Position = UDim2.new(0.0736994222, 0, 0.165195465, 0)
+Mainthing.Size = UDim2.new(0, 1254, 0, 545)
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = Mainthing
+
+Dashboard.Name = "Dashboard"
+Dashboard.Parent = Mainthing
+Dashboard.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Dashboard.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dashboard.BorderSizePixel = 0
+Dashboard.Position = UDim2.new(0.523689508, 0, 0.719329238, 0)
+Dashboard.Size = UDim2.new(0, 597, 0, 153)
+
+UICorner_9.CornerRadius = UDim.new(0, 4)
+UICorner_9.Parent = Dashboard
+
+Executor.Name = "Executor"
+Executor.Parent = Mainthing
+Executor.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Executor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Executor.BorderSizePixel = 0
+Executor.Position = UDim2.new(-0.000463263656, 0, -0.001777019, 0)
+Executor.Size = UDim2.new(0, 597, 0, 257)
+
+UICorner_10.CornerRadius = UDim.new(0, 4)
+UICorner_10.Parent = Executor
+
+ScriptHub.Name = "Script Hub"
+ScriptHub.Parent = Mainthing
+ScriptHub.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+ScriptHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptHub.BorderSizePixel = 0
+ScriptHub.Position = UDim2.new(-0.000463263656, 0, 0.531469166, 0)
+ScriptHub.Size = UDim2.new(0, 597, 0, 257)
+
+UICorner_11.CornerRadius = UDim.new(0, 4)
+UICorner_11.Parent = ScriptHub
+
+Settings.Name = "Settings"
+Settings.Parent = Mainthing
+Settings.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.523689508, 0, 0.399679035, 0)
+Settings.Size = UDim2.new(0, 597, 0, 153)
+
+UICorner_12.CornerRadius = UDim.new(0, 4)
+UICorner_12.Parent = Settings
+
+cmdthingparent.Name = "cmdthingparent"
+cmdthingparent.Parent = Mainthing
+cmdthingparent.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+cmdthingparent.BackgroundTransparency = 1.000
+cmdthingparent.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cmdthingparent.BorderSizePixel = 0
+cmdthingparent.Position = UDim2.new(0.523689508, 0, -0.001777019, 0)
+cmdthingparent.Size = UDim2.new(0, 596, 0, 202)
+
+UICorner_13.CornerRadius = UDim.new(0, 4)
+UICorner_13.Parent = cmdthingparent
+
+Commandbar.Name = "Commandbar"
+Commandbar.Parent = cmdthingparent
+Commandbar.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Commandbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Commandbar.BorderSizePixel = 0
+Commandbar.Position = UDim2.new(-0.00267839036, 0, 0.776590943, 0)
+Commandbar.Size = UDim2.new(0, 597, 0, 43)
+
+UICorner_14.CornerRadius = UDim.new(0, 4)
+UICorner_14.Parent = Commandbar
+
+Commands.Name = "Commands"
+Commands.Parent = cmdthingparent
+Commands.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Commands.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Commands.BorderSizePixel = 0
+Commands.Position = UDim2.new(0.197207153, 0, -0.00312140444, 0)
+Commands.Size = UDim2.new(0, 478, 0, 151)
+
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = Commands
+
+QuickCommands.Name = "Quick Commands"
+QuickCommands.Parent = cmdthingparent
+QuickCommands.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+QuickCommands.BorderColor3 = Color3.fromRGB(0, 0, 0)
+QuickCommands.BorderSizePixel = 0
+QuickCommands.Position = UDim2.new(-0.0010033485, 0, -0.00312140444, 0)
+QuickCommands.Size = UDim2.new(0, 103, 0, 151)
+
+UICorner_16.CornerRadius = UDim.new(0, 4)
+UICorner_16.Parent = QuickCommands
+
+-- Scripts:
+
+local function FATH_fake_script() -- LightningY.ButtonOpen 
+	local script = Instance.new('LocalScript', LightningY)
+
+	
+	
+	local button = script.Parent:WaitForChild("Dragicon"):WaitForChild("Openbutton")
+	local gui = game.Players.LocalPlayer.PlayerGui:WaitForChild("Lightning Y"):WaitForChild("Mainthing")
+	
+	button.MouseButton1Click:Connect(function()
+		gui.Visible = not gui.Visible
+	end)
+	
+	
+	
+end
+coroutine.wrap(FATH_fake_script)()
+local function GZBTD_fake_script() -- LightningY.InsertOpen 
+	local script = Instance.new('LocalScript', LightningY)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+	
+		if input.KeyCode == Enum.KeyCode.Insert then
+			local gui = game.Players.LocalPlayer.PlayerGui:WaitForChild("Lightning Y"):WaitForChild("Mainthing")
+			gui.Visible = not gui.Visible
+		end
+	end)
+end
+coroutine.wrap(GZBTD_fake_script)()
+local function PJBTI_fake_script() -- Name_3.exec detection 
+	local script = Instance.new('LocalScript', Name_3)
+
+	local exec = identifyexecutor()
+	script.Parent.Text = exec
+	script.Parent.Parent.Parent.Parent.exec.Value = exec
+end
+coroutine.wrap(PJBTI_fake_script)()
+local function WTOZE_fake_script() -- Dragicon.LocalScript 
+	local script = Instance.new('LocalScript', Dragicon)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(WTOZE_fake_script)()
+local function FJSYX_fake_script() -- Dragicon.LocalScript 
+	local script = Instance.new('LocalScript', Dragicon)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(FJSYX_fake_script)()
+local function ZAFZBJ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Hello world!")
+	end)
+	
+end
+coroutine.wrap(ZAFZBJ_fake_script)()
+local function QNDBCJ_fake_script() -- Dashboard.LocalScript 
+	local script = Instance.new('LocalScript', Dashboard)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(QNDBCJ_fake_script)()
+local function JCDR_fake_script() -- Executor.LocalScript 
+	local script = Instance.new('LocalScript', Executor)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(JCDR_fake_script)()
+local function LWIUABS_fake_script() -- ScriptHub.LocalScript 
+	local script = Instance.new('LocalScript', ScriptHub)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(LWIUABS_fake_script)()
+local function WDBRR_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(WDBRR_fake_script)()
+local function VDRXC_fake_script() -- cmdthingparent.LocalScript 
+	local script = Instance.new('LocalScript', cmdthingparent)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(VDRXC_fake_script)()
